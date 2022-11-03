@@ -1,55 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap css start -->
-    <link rel="stylesheet" href="css/bootstrap-5.2.2-dist/css/bootstrap-grid.min.css">
-    <!-- bootstrap css end -->
-   <link rel="stylesheet" href="css/main.css">
-    <title>Home</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="hero.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js" ></script>
-</body>
+    <!-- bootstrap css start -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-5.2.2-dist/css/bootstrap.min.css"
+    />
+    <!-- bootstrap css end -->
+
+    <!-- font awesom cdn start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesom cdn end -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- custom css start -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- custom css end -->
+
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+          href="./index.html"
+        >
+          <img src="img/logo.jpg" alt="site icon" width="50px" height="50px"/>
+          <span class="text-uppercase fw-lighter ms-2">Khushi Enterprises</span>
+        </a>
+
+        <div class="order-lg-2 nav-btns">
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-shopping-cart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+              >5</span
+            >
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-heart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+              >2</span
+            >
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#header"
+                >home</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#collection"
+                >housekeeping</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#special"
+                >hardware</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#blogs"
+                >electrical</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#about"
+                >about us</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2 border-0">
+              <a class="nav-link text-uppercase text-dark" href="#popular"
+                >offers</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- bootstrap js start -->
+    <script src="css/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap js end -->
+
+    <!-- jquery start -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- jquery end -->
+
+    <!-- custom js start -->
+    <script src="js/script.js"></script>
+    <!-- custom js end -->
+  </body>
 </html>
